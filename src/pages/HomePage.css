@@ -1,0 +1,81 @@
+  /* src/pages/HomePage.css */
+  .home-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; /* Sedikit dikurangi agar tidak terlalu penuh */
+    padding: 2rem; /* Menambah padding agar tidak menempel di tepi saat layar kecil */
+    text-align: center;
+    color: var(--text-light);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0') no-repeat center center/cover;
+  }
+
+  /* BARU: Styling untuk logo */
+  .hero-logo {
+    width: 200px; /* Perbesar ukuran logo */
+    margin-bottom: 2rem; /* Beri jarak ke judul di bawahnya */
+    /* Efek bayangan agar logo sedikit 'terangkat' dari background */
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.4)); 
+  }
+
+  .home-hero h1 {
+    font-size: 3.2rem; /* Sedikit perbesar font judul */
+    font-weight: 700; /* Pertebal font */
+    line-height: 1.2; /* Beri jarak antar baris */
+    max-width: 800px; /* Batasi lebar agar tidak terlalu panjang di layar besar */
+    margin-bottom: 1.2rem; /* Jarak ke deskripsi */
+  }
+
+  .home-hero p {
+    font-size: 1.1rem; /* Perbesar font deskripsi agar mudah dibaca */
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.7; /* Jarak antar baris deskripsi lebih besar */
+    opacity: 0.9; /* Sedikit transparansi agar tidak sekuat judul */
+    margin-bottom: 2.5rem; /* Jarak ke tombol */
+  }
+
+  .cta-button {
+    background-color: var(--accent-teal);
+    color: var(--text-light);
+    /* Perbesar tombol agar lebih menonjol */
+    padding: 0.9rem 2.5rem; 
+    font-size: 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  .cta-button:hover {
+    background-color: #108a9c;
+    transform: translateY(-5px) scale(1.05); /* Tambah efek scale saat hover */
+}
+  /* Styling untuk Visi & Misi */
+  .home-vision-mission {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .vision-mission-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: var(--text-light);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 300px;
+  }
+
+  .home-photo {
+    display: center;
+    padding:0cm;
+    height: 5cm;
+  }

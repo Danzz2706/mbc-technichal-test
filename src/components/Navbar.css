@@ -1,0 +1,39 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(10, 38, 71, 0.8); /* Warna biru tua semi-transparan */
+    backdrop-filter: blur(10px); /* Efek blur untuk nuansa kaca */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--primary-medium-blue);
+  }
+  
+  .navbar-brand {
+    color: var(--text-light);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .brand-accent {
+    color: var(--accent-teal);
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  
+  .navbar-links a {
+    color: var(--text-light);
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: var(--accent-teal);
+  } 

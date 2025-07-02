@@ -1,0 +1,80 @@
+/* src/pages/ContactPage.css */
+.contact-container {
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0') no-repeat center center/cover;
+    color:white;
+  }
+  
+  .contact-container h1, .contact-container p {
+    text-align: center;
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-direction: column; /* Ubah dari row ke column */
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  
+  
+  .contact-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-medium-blue);
+  }
+  
+  .contact-form button {
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-deep-blue);
+    color: var(--text-light);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: var(--primary-medium-blue);
+  }
+  
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+  }
+  .contact-info h3{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+  }
+  .map-container {
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden; /* Agar iframe mengikuti border-radius */
+  }
+  .contact-form, .contact-info {
+    max-width: 500px;
+    width: 100%;
+  }
+  

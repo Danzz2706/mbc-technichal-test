@@ -1,0 +1,21 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap');
+
+:root {
+  --primary-deep-blue: #0A2647;
+  --primary-medium-blue: #2C74B3;
+  --accent-teal: #14A2B8;
+  --background-sand: #F5F5F5;
+  --text-light: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--background-sand);
+  color: var(--primary-deep-blue);
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}

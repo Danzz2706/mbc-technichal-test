@@ -1,0 +1,31 @@
+/* src/components/Footer.css */
+
+.footer {
+    /* Warna latar biru tua, seperti laut dalam */
+    background-color: var(--primary-deep-blue); 
+    
+    /* Warna teks putih agar kontras dan mudah dibaca */
+    color: var(--text-light); 
+    
+    /* Memberi jarak di dalam footer agar konten tidak menempel di tepi */
+    padding: 2rem 1rem; 
+    
+    /* Meletakkan teks di tengah secara horizontal */
+    text-align: center; 
+
+    /* Garis tipis di bagian atas sebagai pemisah dari konten halaman */
+    border-top: 3px solid var(--accent-teal); 
+    
+  }
+  
+  .footer p {
+    /* Menghapus margin default dari paragraf agar jarak lebih rapi */
+    margin: 0.5rem 0; 
+    
+    /* Ukuran font sedikit lebih kecil untuk informasi sekunder */
+    font-size: 0.9rem; 
+    
+    /* Sedikit transparansi pada teks agar tidak terlalu mencolok */
+    opacity: 0.8; 
+  }
+  
