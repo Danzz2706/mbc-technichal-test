@@ -35,7 +35,7 @@ const ContactPage = () => {
         <div className="contact-info">
           <h3>Informasi Kontak</h3>
           <p><strong>Alamat:</strong> Jl.Telekomunikasi No.1, Bandung</p>
-          <p><strong>Telepon:</strong> 081234567890</p>
+          <p><strong>Telepon:</strong> 081394526974</p>
           <p><strong>Email:</strong> zaidanmunadi@gmail.com</p>
           <div className="map-container">
             {/* Sematkan Google Maps di sini */}
