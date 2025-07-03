@@ -2,19 +2,14 @@
 
 const nodemailer = require('nodemailer');
 
-// Ini adalah "pembungkus" yang menambahkan header CORS ke fungsi utama kita
+// "Pembungkus" yang menambahkan header izin (CORS)
 const allowCors = fn => async (req, res) => {
   res.setHeader('Access-Control-Allow-Credentials', true);
-  // Baris di bawah ini adalah kuncinya: mengizinkan request dari semua domain
-  res.setHeader('Access-Control-Allow-Origin', '*'); 
-  // Anda juga bisa mengganti '*' dengan domain frontend spesifik Anda untuk keamanan lebih
-  // contoh: res.setHeader('Access-Control-Allow-Origin', 'https://mbc-technichal-test.vercel.app');
-  
+  res.setHeader('Access-Control-Allow-Origin', '*'); // Mengizinkan request dari semua domain
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version');
-  
-  // Browser akan mengirim request 'OPTIONS' terlebih dahulu (pre-flight request)
-  // Kita harus meresponsnya dengan status 200 OK
+
+  // Menangani request 'OPTIONS' (pre-flight) dari browser
   if (req.method === 'OPTIONS') {
     res.status(200).end();
     return;
@@ -22,7 +17,7 @@ const allowCors = fn => async (req, res) => {
   return await fn(req, res);
 };
 
-// Ini adalah fungsi handler Anda yang sudah ada
+// Handler utama untuk mengirim email
 async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Hanya metode POST yang diizinkan' });
@@ -54,5 +49,5 @@ async function handler(req, res) {
   }
 }
 
-// Bungkus handler utama kita dengan helper CORS sebelum di-export
+// Export handler yang sudah dibungkus dengan allowCors
 export default allowCors(handler);
