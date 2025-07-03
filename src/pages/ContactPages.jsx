@@ -13,7 +13,7 @@ const ContactPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/contact', formData);
+      const response = await axios.post('https://mbc-contact-api.vercel.app/api/contact', formData);
       alert(response.data.message);
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
