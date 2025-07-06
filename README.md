@@ -1,4 +1,4 @@
-## 1. Pendahuluan dan Tujuan Proyek
+8## 1. Pendahuluan dan Tujuan Proyek
 Proyek ini adalah implementasi dari tugas technical test untuk rekrutmen Research Assistant Laboratorium MBC 2025. Tujuannya adalah untuk membangun sebuah landing page yang fungsional, profesional, dan modern yang merepresentasikan citra Laboratorium MBC di ranah digital.
 
 Website ini dikembangkan sebagai Single-Page Application (SPA) menggunakan React (dengan build tool Vite) untuk membangun antarmuka pengguna (frontend) yang interaktif. Untuk fungsionalitas backend, khususnya pada formulir kontak, proyek ini memanfaatkan Node.js yang di-deploy sebagai Serverless Function di platform cloud Vercel.
@@ -69,4 +69,4 @@ Build Process: Vercel menjalankan perintah npm run build untuk mengkompilasi apl
 
 SSL Otomatis: Keamanan koneksi dijamin melalui HTTPS. Vercel secara otomatis menyediakan dan mengelola sertifikat SSL untuk setiap proyek yang di-deploy. Proses ini tidak memerlukan konfigurasi manual sama sekali, memastikan bahwa semua komunikasi antara pengguna dan website terenkripsi. 
 
-Penjelasan ini mencakup seluruh aspek teknis dari proyek Anda, dari struktur, alur kerja, hingga deployment dan keamanan, sesuai dengan yang disyaratkan dalam panduan.
+Penjelasan ini mencakup seluruh aspek teknis dari proyek Technical ini, dari struktur, alur kerja, hingga deployment dan keamanan, sesuai dengan yang disyaratkan dalam panduan.
